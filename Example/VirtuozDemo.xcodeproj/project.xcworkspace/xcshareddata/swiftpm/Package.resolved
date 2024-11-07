@@ -1,0 +1,15 @@
+{
+  "originHash" : "ae4fdf92acca4b841ed8628ff6755bc1ef22f7054e4cbd070d97a34a539fd0cf",
+  "pins" : [
+    {
+      "identity" : "virtuoz-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MagieFactory/virtuoz-sdk",
+      "state" : {
+        "revision" : "86e72581d87539432435b331f161118f80b3456d",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

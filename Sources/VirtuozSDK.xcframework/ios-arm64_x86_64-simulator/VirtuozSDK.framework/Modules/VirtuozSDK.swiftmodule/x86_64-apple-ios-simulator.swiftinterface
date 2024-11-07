@@ -1,0 +1,52 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name VirtuozSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+@_exported import VirtuozSDK
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum PeripheralState {
+  case connected
+  case disconnected
+  public static func == (a: VirtuozSDK.PeripheralState, b: VirtuozSDK.PeripheralState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Configuration {
+  public let urlScheme: Swift.String?
+  public let enableLogs: Swift.Bool
+  public let killAppOnLongPress: Swift.Bool
+  public static var `default`: VirtuozSDK.Configuration
+  public init(urlScheme: Swift.String? = nil, enableLogs: Swift.Bool = false, killAppOnLongPress: Swift.Bool = false)
+}
+public protocol VirtuozManagerDelegate {
+  func virtuozHasBeenUnpaired()
+  func virtuozStateUpdated(state: VirtuozSDK.PeripheralState)
+  func virtuozHasAnUpdateAvailable()
+  func virtuozBatteryLevelUpdated(value: Swift.Int, image: UIKit.UIImage?)
+  func virtuozDidPress()
+  func virtuozDidLongPress()
+}
+@_hasMissingDesignatedInitializers public class VirtuozManager {
+  public static let shared: VirtuozSDK.VirtuozManager
+  public var linkedVirtuozName: Swift.String? {
+    get
+  }
+  public var delegate: (any VirtuozSDK.VirtuozManagerDelegate)?
+  public func setup(with configuration: VirtuozSDK.Configuration = .default)
+  public func handleUrl(_ url: Foundation.URL) -> Swift.Bool
+  public func connect(onSuccess: (() -> Swift.Void)? = nil, onError: (() -> Swift.Void)? = nil)
+  public func redirectToVirtuoz()
+  public func triggerVibration()
+  @objc deinit
+}
+extension VirtuozSDK.PeripheralState : Swift.Equatable {}
+extension VirtuozSDK.PeripheralState : Swift.Hashable {}

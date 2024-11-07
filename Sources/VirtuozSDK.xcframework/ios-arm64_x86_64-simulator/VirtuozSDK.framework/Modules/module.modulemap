@@ -1,0 +1,6 @@
+framework module VirtuozSDK {
+  umbrella header "VirtuozSDK.h"
+  export *
+
+  module * { export * }
+}

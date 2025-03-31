@@ -590,30 +590,30 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VirtuozSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VirtuozSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "VirtuozSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "VirtuozSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "VirtuozSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -5912,413 +5912,420 @@
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 806,
+      "offset": 249,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 621,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 838,
+      "offset": 653,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 871,
+      "offset": 686,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 909,
+      "offset": 724,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 941,
+      "offset": 756,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 978,
+      "offset": 793,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 1016,
+      "offset": 831,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 1041,
+      "offset": 856,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2419,
+      "offset": 2234,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2449,
+      "offset": 2264,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2480,
+      "offset": 2295,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2510,
+      "offset": 2325,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2539,
+      "offset": 2354,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2629,
+      "offset": 2444,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2655,
+      "offset": 2470,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2685,
+      "offset": 2500,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2712,
+      "offset": 2527,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2745,
+      "offset": 2560,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2779,
+      "offset": 2594,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2870,
+      "offset": 2685,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2896,
+      "offset": 2711,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3208,
+      "offset": 3023,
       "length": 13,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3239,
+      "offset": 3054,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3264,
+      "offset": 3079,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3374,
+      "offset": 3189,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3410,
+      "offset": 3225,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3441,
+      "offset": 3256,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3755,
+      "offset": 3570,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3779,
+      "offset": 3594,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4099,
+      "offset": 3914,
       "length": 6,
       "value": "\"180F\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4157,
+      "offset": 3972,
       "length": 6,
       "value": "\"180A\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4203,
+      "offset": 4018,
       "length": 38,
       "value": "\"1501CBF1-D0A6-4E2C-B28D-10BEC35B0D29\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4283,
+      "offset": 4098,
       "length": 38,
       "value": "\"9061235B-2423-46F5-87E3-99EC21ECCA6D\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4367,
+      "offset": 4182,
       "length": 38,
       "value": "\"E12483AB-A43A-4185-9F43-598AD4E6568A\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4446,
+      "offset": 4261,
       "length": 38,
       "value": "\"9209A15E-4CFF-45DF-B39D-E77A35EA0A3E\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4589,
+      "offset": 4404,
       "length": 6,
       "value": "\"2A19\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4651,
+      "offset": 4466,
       "length": 6,
       "value": "\"2BED\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4724,
+      "offset": 4539,
       "length": 6,
       "value": "\"2A29\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4770,
+      "offset": 4585,
       "length": 6,
       "value": "\"2A24\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4819,
+      "offset": 4634,
       "length": 6,
       "value": "\"2A27\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4868,
+      "offset": 4683,
       "length": 6,
       "value": "\"2A26\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4915,
+      "offset": 4730,
       "length": 6,
       "value": "\"2A25\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4972,
+      "offset": 4787,
       "length": 38,
       "value": "\"148B379F-7C72-40E9-BA23-23CEEA95CEA6\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5068,
+      "offset": 4883,
       "length": 38,
       "value": "\"959D8ED8-0644-4D36-B065-29CAB1C0BD9D\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5149,
+      "offset": 4964,
       "length": 38,
       "value": "\"22FA4E3B-B9E0-49FD-97D5-0AA9083C230D\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5238,
+      "offset": 5053,
       "length": 38,
       "value": "\"338972FE-AA28-426D-A5FF-EA45DAD72A19\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5346,
+      "offset": 5161,
       "length": 38,
       "value": "\"20FF5491-3447-407A-AF82-68EBE4E88E10\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5442,
+      "offset": 5257,
       "length": 38,
       "value": "\"7B0FD802-674A-4D34-9BBE-B1A5EE14D64B\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5540,
+      "offset": 5355,
       "length": 38,
       "value": "\"C42B686D-BBCB-4990-98FA-6C6DA4502CE8\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5633,
+      "offset": 5448,
       "length": 38,
       "value": "\"432546C5-0226-4A67-A404-EE8690AB4BDF\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5734,
+      "offset": 5549,
       "length": 38,
       "value": "\"ABC2DF4B-94B4-4E46-A937-395FE6A7E6B2\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5830,
+      "offset": 5645,
       "length": 38,
       "value": "\"3FAC6E66-546D-4F78-8CBA-728753773D49\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5942,
+      "offset": 5757,
       "length": 38,
       "value": "\"8D51D5F2-7195-46BD-BEEA-487042A5C4E5\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 6030,
+      "offset": 5845,
       "length": 38,
       "value": "\"FD86BBD8-6A0E-423B-8628-0A1871C4D108\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 6126,
+      "offset": 5941,
       "length": 38,
       "value": "\"EF27BB02-FFF8-4299-B49D-1A998ED0AB62\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 6209,
+      "offset": 6024,
       "length": 38,
       "value": "\"0DE67509-4EFB-4E63-989C-9C8CC75874A3\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 6301,
+      "offset": 6116,
       "length": 38,
       "value": "\"6DCA034D-F300-4EBB-AEC6-50D82F2902D5\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 6407,
+      "offset": 6222,
       "length": 38,
       "value": "\"9CD4F8FB-2F9B-41D0-B0B7-BAADCF685526\""
     },
     {
       "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 6508,
+      "offset": 6323,
       "length": 38,
       "value": "\"45BCD869-D75F-4EAE-B60F-31B3F226D007\""
     },

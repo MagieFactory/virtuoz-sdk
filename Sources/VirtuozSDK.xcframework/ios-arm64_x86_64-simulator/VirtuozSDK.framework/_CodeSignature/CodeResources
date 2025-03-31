@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9f5iezJ6Qg3Uy9TkesgoLlx6iXM=
+		/z2NTYlE7aJgTQCw5pwQUWn/hIQ=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DkbBXsmTKYnOwyi9aasw42amh60=
+		p0ooaMtbzRMJoDNDZ5UpQLonSrc=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9f5iezJ6Qg3Uy9TkesgoLlx6iXM=
+		/z2NTYlE7aJgTQCw5pwQUWn/hIQ=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7dfU9Ff7+9Z1YeZ78ZuefyBSB8I=
+		39x+P4WAVA9YQ4pmOLG6+fhWazk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6EtfutUZXatIbejYHU4ik6Mt2pukafX7ZAA/R23r8dM=
+			xBAyhz4x5UMnnzPexNH3WIsOTdq6Nbvm9sURbjjv0m4=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LLzXTmljWK3EsaBbCHUE3lm02aB7csp8XEFh8Mbg9Jw=
+			VJNWzZEqTjUTdxK8Rp1SLMS6Oy5AGmHUaEDHSBEWZNM=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6EtfutUZXatIbejYHU4ik6Mt2pukafX7ZAA/R23r8dM=
+			xBAyhz4x5UMnnzPexNH3WIsOTdq6Nbvm9sURbjjv0m4=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yRxa58zu7a08EEKU0dnhGplTxFZtd4otKngCagjLeL4=
+			gJ8Ih+exp3XpadivwX0ogjbOUBj1MHM9C9TQPde5hfQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

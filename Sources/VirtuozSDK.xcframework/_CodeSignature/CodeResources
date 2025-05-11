@@ -14,7 +14,7 @@
 		</data>
 		<key>ios-arm64/VirtuozSDK.framework/Info.plist</key>
 		<data>
-		L5d0eqfmh5gwH5t93aIKjDbRqyk=
+		j4B/DMtChcfioTzlr6aqlYMvAuo=
 		</data>
 		<key>ios-arm64/VirtuozSDK.framework/Modules/VirtuozSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>ios-arm64/VirtuozSDK.framework/VirtuozSDK</key>
 		<data>
-		KIB5g6eJOfuUHcJWa6kw6S23Ft4=
+		FdgdfM+t3w5H4YyUZTsxwhbSpTY=
 		</data>
 		<key>ios-arm64/VirtuozSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		cR5Cq89kz6MsqPQ0mgL0aPYm2rE=
+		jO5VoKuintV4DZz524MVNLUFCP8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/VirtuozSDK.framework/Assets.car</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/VirtuozSDK.framework/Info.plist</key>
 		<data>
-		tfFWXa1HzgSNH4TzBS5Uenobq4g=
+		kHNdKUSv3BSqtnF8DoejC/0tK9w=
 		</data>
 		<key>ios-arm64_x86_64-simulator/VirtuozSDK.framework/Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/VirtuozSDK.framework/VirtuozSDK</key>
 		<data>
-		CUp8k7HCwRAUPVqUA4knOOb6/cE=
+		3GOmVaP0DI7kyIJOi2/yLgHUJEw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/VirtuozSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		MnPWs/ZxnVjzblVL/Yv1Woto3QY=
+		rNFgA/1knysth5vSbjVZMmI4Dm8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -129,11 +129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L5d0eqfmh5gwH5t93aIKjDbRqyk=
+			j4B/DMtChcfioTzlr6aqlYMvAuo=
 			</data>
 			<key>hash2</key>
 			<data>
-			m5cQGMiDnYp2oXJ+vSkdoiopPyl5tk33uVYnNePXI9k=
+			EeBFXvspu3TV5ezFwKwBBF0IHuQ89+WGpXEfwxOmE1I=
 			</data>
 		</dict>
 		<key>ios-arm64/VirtuozSDK.framework/Modules/VirtuozSDK.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -195,22 +195,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KIB5g6eJOfuUHcJWa6kw6S23Ft4=
+			FdgdfM+t3w5H4YyUZTsxwhbSpTY=
 			</data>
 			<key>hash2</key>
 			<data>
-			X/bVYh0fwuQJUbM/a7lhlroixUP+7kGGH5AAVkyqpOs=
+			Kao7LAV7gTrcfascWYSoIr5hUsAEev/10XB5HRWz/Bk=
 			</data>
 		</dict>
 		<key>ios-arm64/VirtuozSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cR5Cq89kz6MsqPQ0mgL0aPYm2rE=
+			jO5VoKuintV4DZz524MVNLUFCP8=
 			</data>
 			<key>hash2</key>
 			<data>
-			0xnEs/Ljxxb2G/V7P/bx62mWZBOSQnWiuSiPKerdXZQ=
+			bU9j5IW1z0wADXK1R/pOnPtVFszXCYypPh8tq4wvGSg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/VirtuozSDK.framework/Assets.car</key>
@@ -239,11 +239,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tfFWXa1HzgSNH4TzBS5Uenobq4g=
+			kHNdKUSv3BSqtnF8DoejC/0tK9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			rr674snw0YD0cLkW1oXZOcszsZaU95kjBwshy2ta8Ac=
+			Sl1DS4vC0F+vSj9bAEATaEVUWFLyo36vl2/GfPnHyQY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/VirtuozSDK.framework/Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -349,22 +349,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CUp8k7HCwRAUPVqUA4knOOb6/cE=
+			3GOmVaP0DI7kyIJOi2/yLgHUJEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			k9Kq1+WRRabwWbggv5kv5csSWOUkq5mxSEh4+7mtgbA=
+			NSg7n1N3/j6seI0bXWSetfRi3zUIc9QrGk+1ZRHBA5w=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/VirtuozSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MnPWs/ZxnVjzblVL/Yv1Woto3QY=
+			rNFgA/1knysth5vSbjVZMmI4Dm8=
 			</data>
 			<key>hash2</key>
 			<data>
-			y0GfBRPadvd6IZHUkG8G9J2y2aBE1tAsoMfR+a12npU=
+			XtDBR5vPYrQmBNR9Y6j77ocVN2ErKuPkSvQpZvUWkFE=
 			</data>
 		</dict>
 	</dict>

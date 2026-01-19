@@ -17,10 +17,10 @@ This Swift library notifies you when a user clicks on Virtuoz and lets you trigg
       - [XCFramework](#xcframework)
     - [One Time Setup](#one-time-setup)
       - [Initializing the SDK](#initializing-the-sdk)
-   	  - [Configuring the SDK](#configuring-the-sdk)
-	- [Usage](#usage)
-      - [Listening to events](#listening-to-events)
-   	  - [Triggering actions](#triggering-actions)
+      - [Configuring the SDK](#configuring-the-sdk)
+  - [Usage](#usage)
+    - [Listening to events](#listening-to-events)
+    - [Triggering actions](#triggering-actions)
   - [🎬 Examples](#-examples)
   - [📄 License](#-license)
 
@@ -43,7 +43,7 @@ Alternatively, if your project has a `Package.swift` file, you can add Virtuoz i
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/MagieFactory/virtuoz-sdk", from: "1.0.0"),
+    .package(url: "https://github.com/MagieFactory/virtuoz-sdk", from: "1.1.0"),
 ]
 ```
 
@@ -67,7 +67,7 @@ After installing the package, you can reference Virtuoz iOS SDK by importing the
 The Virtuoz iOS SDK instance can be used at any time (behind the scenes, a singleton ensures only one instance exists). Linking Virtuoz to your app requires following several steps.
 
 1. Create a custom URL scheme for your app if you haven't already. The SDK uses this scheme to handle navigation between Virtuoz and your app. You can find [a tutorial](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app#register-your-url-scheme) on the Apple website
-2. Virtuoz SDK must handle fallback URL in application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool method:
+2. Virtuoz SDK must handle fallback URL in application(\_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool method:
 
 ```swift
 func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
@@ -85,6 +85,7 @@ VirtuozManager.shared.setup(with: configuration)
 ```
 
 The `Configuration` struct allows you to customize how VirtuozSDK handles various options:
+
 - `urlScheme` must match the value defined in the [Initializing the SDK](#initializing-the-sdk) section.
 - `enableLogs` controls debug logging in the console. You can disable this in production.
 - `killAppOnLongPress` tells the Virtuoz SDK to close the app automatically when the user long-presses Virtuoz.
@@ -94,7 +95,7 @@ Next, call the `connect` method to initiate pairing between Virtuoz and your app
 ```swift
 VirtuozManager.shared.connect(onSuccess: {
 	print("✅ Connection with Virtuoz app is complete!")
-}, onError: { 
+}, onError: {
 	print("🚫 There was an error while linking your app 😢")
 })
 ```
@@ -110,6 +111,7 @@ VirtuozManager.shared.delegate = self
 ```
 
 Here is the list of delegate methods:
+
 - `virtuozHasBeenUnpaired()` notifies when the Virtuoz is unpaired from the Virtuoz app.
 - `virtuozStateUpdated(state: VirtuozSDK.PeripheralState)` notifies when the Virtuoz connects or disconnects.
 - `virtuozHasAnUpdateAvailable()` notifies when a Virtuoz update is available. You can then redirect to Virtuoz using the `redirectToVirtuoz()` method from the VirtuozManager instance.

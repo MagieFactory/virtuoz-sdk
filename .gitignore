@@ -10,8 +10,8 @@ xcuserdata/
 
 ## App packaging
 *.ipa
-*.dSYM.zip
-*.dSYM
+.dSYM.zip
+.dSYM
 
 ## Playgrounds
 timeline.xctimeline

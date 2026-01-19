@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name VirtuozSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VirtuozSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import DeveloperToolsSupport
 import Foundation
 import Swift
@@ -25,25 +25,33 @@ public struct Configuration {
   public let enableLogs: Swift.Bool
   public let killAppOnLongPress: Swift.Bool
   public static var `default`: VirtuozSDK.Configuration
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(urlScheme: Swift.String? = nil, enableLogs: Swift.Bool = false, killAppOnLongPress: Swift.Bool = false)
+  #endif
 }
 public protocol VirtuozManagerDelegate {
   func virtuozHasBeenUnpaired()
   func virtuozStateUpdated(state: VirtuozSDK.PeripheralState)
   func virtuozHasAnUpdateAvailable()
+  #if compiler(>=5.3) && $NonescapableTypes
   func virtuozBatteryLevelUpdated(value: Swift.Int, image: UIKit.UIImage?)
+  #endif
   func virtuozDidPress()
   func virtuozDidLongPress()
 }
 @_hasMissingDesignatedInitializers public class VirtuozManager {
   public static let shared: VirtuozSDK.VirtuozManager
+  #if compiler(>=5.3) && $NonescapableTypes
   public var linkedVirtuozName: Swift.String? {
     get
   }
+  #endif
   public var delegate: (any VirtuozSDK.VirtuozManagerDelegate)?
   public func setup(with configuration: VirtuozSDK.Configuration = .default)
   public func handleUrl(_ url: Foundation.URL) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public func connect(onSuccess: (() -> Swift.Void)? = nil, onError: (() -> Swift.Void)? = nil)
+  #endif
   public func redirectToVirtuoz()
   public func triggerVibration()
   @objc deinit

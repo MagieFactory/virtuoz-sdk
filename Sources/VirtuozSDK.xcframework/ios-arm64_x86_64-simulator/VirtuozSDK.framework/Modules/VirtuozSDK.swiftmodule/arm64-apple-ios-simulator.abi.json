@@ -2134,6 +2134,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
@@ -2155,32 +2162,48 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
+                "name": "Regions",
+                "printedName": "Regions",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NSArray",
-                    "printedName": "Foundation.NSArray",
-                    "usr": "c:objc(cs)NSArray"
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
                   }
                 ]
               }
             ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
           },
           {
             "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
           },
           {
             "kind": "Conformance",
@@ -2233,48 +2256,32 @@
           },
           {
             "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
                   }
                 ]
               }
             ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           }
         ]
       },
@@ -2286,21 +2293,14 @@
         "usr": "s:Sq",
         "mangledName": "$sSq",
         "moduleName": "Swift",
-        "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable>",
-        "sugared_genericSig": "<Wrapped where Wrapped : ~Copyable>",
+        "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable, τ_0_0 : ~Escapable>",
+        "sugared_genericSig": "<Wrapped where Wrapped : ~Copyable, Wrapped : ~Escapable>",
         "declAttributes": [
           "Frozen"
         ],
         "isExternal": true,
         "isEnumExhaustive": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -2324,10 +2324,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2335,6 +2335,20 @@
             "printedName": "BitwiseCopyable",
             "usr": "s:s15BitwiseCopyableP",
             "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -2433,6 +2447,47 @@
             ],
             "usr": "s:10Foundation26DecodableWithConfigurationP",
             "mangledName": "$s10Foundation26DecodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AttributedTextFormattingDefinition",
+            "printedName": "AttributedTextFormattingDefinition",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUICore.AttributedTextFormattingDefinition<Wrapped.Scope>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AttributedTextFormattingDefinition",
+                        "printedName": "SwiftUICore.AttributedTextFormattingDefinition",
+                        "usr": "s:7SwiftUI34AttributedTextFormattingDefinitionP"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Scope",
+                "printedName": "Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Scope"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI34AttributedTextFormattingDefinitionP",
+            "mangledName": "$s7SwiftUI34AttributedTextFormattingDefinitionP"
           },
           {
             "kind": "Conformance",
@@ -2633,6 +2688,55 @@
           },
           {
             "kind": "Conformance",
+            "name": "SliderTickContent",
+            "printedName": "SliderTickContent",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Value"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SwiftUI.SliderTick<τ_0_0.Value>]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SliderTick",
+                        "printedName": "SwiftUI.SliderTick<τ_0_0.Value>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DependentMember",
+                            "printedName": "τ_0_0.Value"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI10SliderTickV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI17SliderTickContentP",
+            "mangledName": "$s7SwiftUI17SliderTickContentP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Commands",
             "printedName": "Commands",
             "children": [
@@ -2781,6 +2885,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -3561,6 +3672,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -3864,6 +3982,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -4006,2639 +4131,2660 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 518,
       "length": 6,
       "value": "\"1800\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 579,
       "length": 6,
       "value": "\"1801\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 6,
       "value": "\"1802\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 710,
       "length": 6,
       "value": "\"1803\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 782,
       "length": 6,
       "value": "\"1804\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 854,
       "length": 6,
       "value": "\"1805\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 926,
       "length": 6,
       "value": "\"1806\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 998,
       "length": 6,
       "value": "\"1807\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1070,
       "length": 6,
       "value": "\"1808\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1142,
       "length": 6,
       "value": "\"1809\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1214,
       "length": 6,
       "value": "\"180A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1286,
       "length": 6,
       "value": "\"180D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1358,
       "length": 6,
       "value": "\"180E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1430,
       "length": 6,
       "value": "\"180F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1502,
       "length": 6,
       "value": "\"1810\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1574,
       "length": 6,
       "value": "\"1811\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1646,
       "length": 6,
       "value": "\"1812\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1718,
       "length": 6,
       "value": "\"1813\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1790,
       "length": 6,
       "value": "\"1814\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1862,
       "length": 6,
       "value": "\"1815\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1934,
       "length": 6,
       "value": "\"1816\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2006,
       "length": 6,
       "value": "\"1818\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2078,
       "length": 6,
       "value": "\"1819\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2150,
       "length": 6,
       "value": "\"181A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2222,
       "length": 6,
       "value": "\"181B\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2294,
       "length": 6,
       "value": "\"181C\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2366,
       "length": 6,
       "value": "\"181D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2438,
       "length": 6,
       "value": "\"181E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2510,
       "length": 6,
       "value": "\"181F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2582,
       "length": 6,
       "value": "\"1820\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2654,
       "length": 6,
       "value": "\"1821\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2726,
       "length": 6,
       "value": "\"1822\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2798,
       "length": 6,
       "value": "\"1823\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2870,
       "length": 6,
       "value": "\"1824\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 2942,
       "length": 6,
       "value": "\"1825\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3014,
       "length": 6,
       "value": "\"1826\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3086,
       "length": 6,
       "value": "\"1827\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3158,
       "length": 6,
       "value": "\"1828\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3230,
       "length": 6,
       "value": "\"1829\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3302,
       "length": 6,
       "value": "\"182A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3570,
       "length": 6,
       "value": "\"2A00\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3625,
       "length": 6,
       "value": "\"2A01\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3691,
       "length": 6,
       "value": "\"2A02\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3755,
       "length": 6,
       "value": "\"2A03\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3839,
       "length": 6,
       "value": "\"2A04\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3898,
       "length": 6,
       "value": "\"2A05\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 3953,
       "length": 6,
       "value": "\"2A06\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4010,
       "length": 6,
       "value": "\"2A07\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4063,
       "length": 6,
       "value": "\"2A08\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4117,
       "length": 6,
       "value": "\"2A09\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4173,
       "length": 6,
       "value": "\"2A0A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4230,
       "length": 6,
       "value": "\"2A0C\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4284,
       "length": 6,
       "value": "\"2A0D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4337,
       "length": 6,
       "value": "\"2A0E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4402,
       "length": 6,
       "value": "\"2A0F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4458,
       "length": 6,
       "value": "\"2A11\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4515,
       "length": 6,
       "value": "\"2A12\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4570,
       "length": 6,
       "value": "\"2A13\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4639,
       "length": 6,
       "value": "\"2A14\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4706,
       "length": 6,
       "value": "\"2A16\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4766,
       "length": 6,
       "value": "\"2A17\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4829,
       "length": 6,
       "value": "\"2A18\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4886,
       "length": 6,
       "value": "\"2A19\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 4953,
       "length": 6,
       "value": "\"2A1C\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5013,
       "length": 6,
       "value": "\"2A1D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5081,
       "length": 6,
       "value": "\"2A1E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5145,
       "length": 6,
       "value": "\"2A21\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5213,
       "length": 6,
       "value": "\"2A22\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5266,
       "length": 6,
       "value": "\"2A23\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5328,
       "length": 6,
       "value": "\"2A24\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5391,
       "length": 6,
       "value": "\"2A25\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5458,
       "length": 6,
       "value": "\"2A26\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5525,
       "length": 6,
       "value": "\"2A27\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5592,
       "length": 6,
       "value": "\"2A28\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5659,
       "length": 6,
       "value": "\"2A29\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5750,
       "length": 6,
       "value": "\"2A2A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5806,
       "length": 6,
       "value": "\"2A2B\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5870,
       "length": 6,
       "value": "\"2A2C\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5926,
       "length": 6,
       "value": "\"2A31\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 5995,
       "length": 6,
       "value": "\"2A32\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6060,
       "length": 6,
       "value": "\"2A33\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6130,
       "length": 6,
       "value": "\"2A34\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6199,
       "length": 6,
       "value": "\"2A35\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6268,
       "length": 6,
       "value": "\"2A36\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6333,
       "length": 6,
       "value": "\"2A37\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6396,
       "length": 6,
       "value": "\"2A38\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6462,
       "length": 6,
       "value": "\"2A39\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6518,
       "length": 6,
       "value": "\"2A3F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6581,
       "length": 6,
       "value": "\"2A40\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6639,
       "length": 6,
       "value": "\"2A41\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6706,
       "length": 6,
       "value": "\"2A42\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6766,
       "length": 6,
       "value": "\"2A43\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6840,
       "length": 6,
       "value": "\"2A44\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6902,
       "length": 6,
       "value": "\"2A45\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6955,
       "length": 6,
       "value": "\"2A46\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7025,
       "length": 6,
       "value": "\"2A47\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7098,
       "length": 6,
       "value": "\"2A48\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7163,
       "length": 6,
       "value": "\"2A49\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7222,
       "length": 6,
       "value": "\"2A4A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7276,
       "length": 6,
       "value": "\"2A4B\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7336,
       "length": 6,
       "value": "\"2A4C\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7387,
       "length": 6,
       "value": "\"2A4D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7444,
       "length": 6,
       "value": "\"2A4E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7507,
       "length": 6,
       "value": "\"2A4F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7557,
       "length": 6,
       "value": "\"2A50\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7616,
       "length": 6,
       "value": "\"2A51\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7685,
       "length": 6,
       "value": "\"2A52\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7744,
       "length": 6,
       "value": "\"2A53\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7799,
       "length": 6,
       "value": "\"2A54\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7858,
       "length": 6,
       "value": "\"2A55\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7910,
       "length": 6,
       "value": "\"2A56\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 7961,
       "length": 6,
       "value": "\"2A58\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8015,
       "length": 6,
       "value": "\"2A5A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8074,
       "length": 6,
       "value": "\"2A5B\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8129,
       "length": 6,
       "value": "\"2A5C\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8188,
       "length": 6,
       "value": "\"2A5D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8256,
       "length": 6,
       "value": "\"2A5E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8325,
       "length": 6,
       "value": "\"2A5F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8381,
       "length": 6,
       "value": "\"2A60\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8449,
       "length": 6,
       "value": "\"2A63\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8512,
       "length": 6,
       "value": "\"2A64\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8576,
       "length": 6,
       "value": "\"2A65\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8645,
       "length": 6,
       "value": "\"2A66\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8706,
       "length": 6,
       "value": "\"2A67\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8761,
       "length": 6,
       "value": "\"2A68\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8821,
       "length": 6,
       "value": "\"2A69\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8875,
       "length": 6,
       "value": "\"2A6A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8934,
       "length": 6,
       "value": "\"2A6B\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 8988,
       "length": 6,
       "value": "\"2A6C\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9041,
       "length": 6,
       "value": "\"2A6D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9097,
       "length": 6,
       "value": "\"2A6E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9150,
       "length": 6,
       "value": "\"2A6F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9208,
       "length": 6,
       "value": "\"2A70\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9270,
       "length": 6,
       "value": "\"2A71\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9332,
       "length": 6,
       "value": "\"2A72\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9398,
       "length": 6,
       "value": "\"2A73\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9453,
       "length": 6,
       "value": "\"2A74\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9517,
       "length": 6,
       "value": "\"2A75\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9569,
       "length": 6,
       "value": "\"2A76\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9624,
       "length": 6,
       "value": "\"2A77\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9677,
       "length": 6,
       "value": "\"2A78\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9731,
       "length": 6,
       "value": "\"2A79\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9785,
       "length": 6,
       "value": "\"2A7A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9838,
       "length": 6,
       "value": "\"2A7B\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9905,
       "length": 6,
       "value": "\"2A7D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 9976,
       "length": 6,
       "value": "\"2A7E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10037,
       "length": 6,
       "value": "\"2A7F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10085,
       "length": 6,
       "value": "\"2A80\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10158,
       "length": 6,
       "value": "\"2A81\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10231,
       "length": 6,
       "value": "\"2A82\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10294,
       "length": 6,
       "value": "\"2A83\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10365,
       "length": 6,
       "value": "\"2A84\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10421,
       "length": 6,
       "value": "\"2A85\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10491,
       "length": 6,
       "value": "\"2A86\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10548,
       "length": 6,
       "value": "\"2A87\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10615,
       "length": 6,
       "value": "\"2A88\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10686,
       "length": 6,
       "value": "\"2A89\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10740,
       "length": 6,
       "value": "\"2A8A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10808,
       "length": 6,
       "value": "\"2A8B\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10859,
       "length": 6,
       "value": "\"2A8C\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10916,
       "length": 6,
       "value": "\"2A8D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 10967,
       "length": 6,
       "value": "\"2A8E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11028,
       "length": 6,
       "value": "\"2A8F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11081,
       "length": 6,
       "value": "\"2A90\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11153,
       "length": 6,
       "value": "\"2A91\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11214,
       "length": 6,
       "value": "\"2A92\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11300,
       "length": 6,
       "value": "\"2A93\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11369,
       "length": 6,
       "value": "\"2A94\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11435,
       "length": 6,
       "value": "\"2A95\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11486,
       "length": 6,
       "value": "\"2A96\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11549,
       "length": 6,
       "value": "\"2A97\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11600,
       "length": 6,
       "value": "\"2A98\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11668,
       "length": 6,
       "value": "\"2A99\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11722,
       "length": 6,
       "value": "\"2A9A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11789,
       "length": 6,
       "value": "\"2A9B\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11860,
       "length": 6,
       "value": "\"2A9C\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11922,
       "length": 6,
       "value": "\"2A9D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 11985,
       "length": 6,
       "value": "\"2A9E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12046,
       "length": 6,
       "value": "\"2A9F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12112,
       "length": 6,
       "value": "\"2AA0\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12178,
       "length": 6,
       "value": "\"2AA1\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12231,
       "length": 6,
       "value": "\"2AA2\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12299,
       "length": 6,
       "value": "\"2AA3\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12370,
       "length": 6,
       "value": "\"2AA4\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12436,
       "length": 6,
       "value": "\"2AA5\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12505,
       "length": 6,
       "value": "\"2AA6\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12564,
       "length": 6,
       "value": "\"2AA7\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12619,
       "length": 6,
       "value": "\"2AA8\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12673,
       "length": 6,
       "value": "\"2AA9\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12737,
       "length": 6,
       "value": "\"2AAA\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12799,
       "length": 6,
       "value": "\"2AAB\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12870,
       "length": 6,
       "value": "\"2AAC\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12945,
       "length": 6,
       "value": "\"2AAD\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12998,
       "length": 6,
       "value": "\"2AAE\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13052,
       "length": 6,
       "value": "\"2AAF\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13117,
       "length": 6,
       "value": "\"2AB0\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13181,
       "length": 6,
       "value": "\"2AB1\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13237,
       "length": 6,
       "value": "\"2AB2\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13290,
       "length": 6,
       "value": "\"2AB3\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13346,
       "length": 6,
       "value": "\"2AB4\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13403,
       "length": 6,
       "value": "\"2AB5\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13451,
       "length": 6,
       "value": "\"2AB6\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13507,
       "length": 6,
       "value": "\"2AB7\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13566,
       "length": 6,
       "value": "\"2AB8\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13625,
       "length": 6,
       "value": "\"2AB9\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13686,
       "length": 6,
       "value": "\"2ABA\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13744,
       "length": 6,
       "value": "\"2ABB\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13804,
       "length": 6,
       "value": "\"2ABC\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13859,
       "length": 6,
       "value": "\"2ABD\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13914,
       "length": 6,
       "value": "\"2ABE\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13969,
       "length": 6,
       "value": "\"2ABF\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14024,
       "length": 6,
       "value": "\"2AC0\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14087,
       "length": 6,
       "value": "\"2AC1\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14150,
       "length": 6,
       "value": "\"2AC2\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14203,
       "length": 6,
       "value": "\"2AC3\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14264,
       "length": 6,
       "value": "\"2AC4\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14333,
       "length": 6,
       "value": "\"2AC5\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14400,
       "length": 6,
       "value": "\"2AC6\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14461,
       "length": 6,
       "value": "\"2AC7\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14519,
       "length": 6,
       "value": "\"2AC8\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14592,
       "length": 6,
       "value": "\"2AC9\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14658,
       "length": 6,
       "value": "\"2ACC\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14716,
       "length": 6,
       "value": "\"2ACD\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14777,
       "length": 6,
       "value": "\"2ACE\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14837,
       "length": 6,
       "value": "\"2ACF\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14898,
       "length": 6,
       "value": "\"2AD0\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 14952,
       "length": 6,
       "value": "\"2AD1\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15011,
       "length": 6,
       "value": "\"2AD2\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15070,
       "length": 6,
       "value": "\"2AD3\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15134,
       "length": 6,
       "value": "\"2AD4\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15204,
       "length": 6,
       "value": "\"2AD5\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15278,
       "length": 6,
       "value": "\"2AD6\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15346,
       "length": 6,
       "value": "\"2AD7\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15410,
       "length": 6,
       "value": "\"2AD8\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15481,
       "length": 6,
       "value": "\"2AD9\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15546,
       "length": 6,
       "value": "\"2ADA\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15598,
       "length": 6,
       "value": "\"2AED\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15652,
       "length": 6,
       "value": "\"2B1D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15707,
       "length": 6,
       "value": "\"2B1E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15789,
       "length": 6,
       "value": "\"2B1F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15850,
       "length": 6,
       "value": "\"2B20\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15904,
       "length": 6,
       "value": "\"2B21\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 15970,
       "length": 6,
       "value": "\"2B22\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16026,
       "length": 6,
       "value": "\"2B23\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16098,
       "length": 6,
       "value": "\"2B24\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16165,
       "length": 6,
       "value": "\"2B25\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16224,
       "length": 6,
       "value": "\"2B26\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16296,
       "length": 6,
       "value": "\"2B27\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16351,
       "length": 6,
       "value": "\"2B28\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16640,
       "length": 6,
       "value": "\"2900\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16714,
       "length": 6,
       "value": "\"2901\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16792,
       "length": 6,
       "value": "\"2902\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16870,
       "length": 6,
       "value": "\"2903\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 16947,
       "length": 6,
       "value": "\"2904\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 17021,
       "length": 6,
       "value": "\"2905\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 17076,
       "length": 6,
       "value": "\"2906\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 17144,
       "length": 6,
       "value": "\"2907\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 17204,
       "length": 6,
       "value": "\"2908\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 17265,
       "length": 6,
       "value": "\"2909\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 17329,
       "length": 6,
       "value": "\"290A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 17407,
       "length": 6,
       "value": "\"290B\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 17483,
       "length": 6,
       "value": "\"290C\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 17562,
       "length": 6,
       "value": "\"290D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/CBCharacteristic+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 17625,
       "length": 6,
       "value": "\"290E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
       "kind": "IntegerLiteral",
       "offset": 1635,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
       "kind": "IntegerLiteral",
       "offset": 1640,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
       "kind": "Array",
       "offset": 1714,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
       "kind": "IntegerLiteral",
       "offset": 2784,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
       "kind": "IntegerLiteral",
       "offset": 2794,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/Data+Bluetooth.swift",
       "kind": "IntegerLiteral",
       "offset": 2986,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
       "offset": 131,
       "length": 5,
       "value": "\"MF_\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
       "offset": 224,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
       "offset": 249,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
       "offset": 621,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
       "offset": 653,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
       "offset": 686,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
       "offset": 724,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
       "offset": 756,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
       "offset": 793,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
       "offset": 831,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2234,
+      "offset": 2239,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2264,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2295,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2325,
+      "offset": 2263,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2354,
+      "offset": 2356,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2386,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2417,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2447,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2476,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2444,
+      "offset": 2566,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2470,
+      "offset": 2592,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2500,
+      "offset": 2622,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2527,
+      "offset": 2649,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2560,
+      "offset": 2682,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2594,
+      "offset": 2716,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2685,
+      "offset": 2807,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 2711,
+      "offset": 2833,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3023,
+      "offset": 3145,
       "length": 13,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3054,
+      "offset": 3176,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3079,
+      "offset": 3201,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3189,
+      "offset": 3311,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3225,
+      "offset": 3347,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3256,
+      "offset": 3378,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3570,
+      "offset": 3692,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3594,
+      "offset": 3716,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 3914,
+      "offset": 4036,
       "length": 6,
       "value": "\"180F\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 3972,
+      "offset": 4094,
       "length": 6,
       "value": "\"180A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4018,
+      "offset": 4140,
       "length": 38,
       "value": "\"1501CBF1-D0A6-4E2C-B28D-10BEC35B0D29\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4098,
+      "offset": 4220,
       "length": 38,
       "value": "\"9061235B-2423-46F5-87E3-99EC21ECCA6D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4182,
+      "offset": 4304,
       "length": 38,
       "value": "\"E12483AB-A43A-4185-9F43-598AD4E6568A\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4261,
+      "offset": 4383,
       "length": 38,
       "value": "\"9209A15E-4CFF-45DF-B39D-E77A35EA0A3E\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4404,
+      "offset": 4526,
       "length": 6,
       "value": "\"2A19\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4466,
+      "offset": 4588,
       "length": 6,
       "value": "\"2BED\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4539,
+      "offset": 4661,
       "length": 6,
       "value": "\"2A29\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4585,
+      "offset": 4707,
       "length": 6,
       "value": "\"2A24\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4634,
+      "offset": 4756,
       "length": 6,
       "value": "\"2A27\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4683,
+      "offset": 4805,
       "length": 6,
       "value": "\"2A26\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4730,
+      "offset": 4852,
       "length": 6,
       "value": "\"2A25\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4787,
+      "offset": 4909,
       "length": 38,
       "value": "\"148B379F-7C72-40E9-BA23-23CEEA95CEA6\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4883,
+      "offset": 5005,
       "length": 38,
       "value": "\"959D8ED8-0644-4D36-B065-29CAB1C0BD9D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 4964,
+      "offset": 5086,
       "length": 38,
       "value": "\"22FA4E3B-B9E0-49FD-97D5-0AA9083C230D\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5053,
+      "offset": 5175,
       "length": 38,
       "value": "\"338972FE-AA28-426D-A5FF-EA45DAD72A19\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5161,
+      "offset": 5283,
       "length": 38,
       "value": "\"20FF5491-3447-407A-AF82-68EBE4E88E10\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5257,
+      "offset": 5379,
       "length": 38,
       "value": "\"7B0FD802-674A-4D34-9BBE-B1A5EE14D64B\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5355,
+      "offset": 5477,
       "length": 38,
       "value": "\"C42B686D-BBCB-4990-98FA-6C6DA4502CE8\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5448,
+      "offset": 5570,
       "length": 38,
       "value": "\"432546C5-0226-4A67-A404-EE8690AB4BDF\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5549,
+      "offset": 5671,
       "length": 38,
       "value": "\"ABC2DF4B-94B4-4E46-A937-395FE6A7E6B2\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5645,
+      "offset": 5767,
       "length": 38,
       "value": "\"3FAC6E66-546D-4F78-8CBA-728753773D49\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5757,
+      "offset": 5879,
       "length": 38,
       "value": "\"8D51D5F2-7195-46BD-BEEA-487042A5C4E5\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5845,
+      "offset": 5967,
       "length": 38,
       "value": "\"FD86BBD8-6A0E-423B-8628-0A1871C4D108\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 5941,
+      "offset": 6063,
       "length": 38,
       "value": "\"EF27BB02-FFF8-4299-B49D-1A998ED0AB62\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 6024,
+      "offset": 6146,
       "length": 38,
       "value": "\"0DE67509-4EFB-4E63-989C-9C8CC75874A3\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 6116,
+      "offset": 6238,
       "length": 38,
       "value": "\"6DCA034D-F300-4EBB-AEC6-50D82F2902D5\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 6222,
+      "offset": 6344,
       "length": 38,
       "value": "\"9CD4F8FB-2F9B-41D0-B0B7-BAADCF685526\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/Bluetooth\/RemoteControl.swift",
       "kind": "StringLiteral",
-      "offset": 6323,
+      "offset": 6445,
       "length": 38,
       "value": "\"45BCD869-D75F-4EAE-B60F-31B3F226D007\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 494,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 717,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 947,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1154,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1351,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1550,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1751,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1955,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2166,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2370,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2605,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2865,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3074,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3460,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3690,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3895,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4105,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Components\/RemoteControl\/AppRemoteControlManager.swift",
       "kind": "IntegerLiteral",
       "offset": 4348,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Notifications\/DarwinNotificationManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Notifications\/DarwinNotificationManager.swift",
       "kind": "Dictionary",
       "offset": 239,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/Utils\/String+Virtuoz.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/Utils\/String+Virtuoz.swift",
       "kind": "StringLiteral",
       "offset": 162,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/VirtuozConfig.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/VirtuozConfig.swift",
       "kind": "StringLiteral",
       "offset": 249,
       "length": 37,
       "value": "\"com.magiefactory.virtuoz.disconnect\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/VirtuozConfig.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/VirtuozConfig.swift",
       "kind": "StringLiteral",
       "offset": 885,
-      "length": 30,
-      "value": "\"com.magiefactory.virtuoz.sdk\""
+      "length": 22,
+      "value": "\"group.virtuoz.shared\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Core\/VirtuozConfig.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/VirtuozConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2672,
+      "offset": 952,
+      "length": 24,
+      "value": "\"visualIndicatorModeKey\""
+    },
+    {
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Core\/VirtuozConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2733,
       "length": 47,
       "value": "\"https:\/\/www.magie-factory.fr\/products\/virtuoz\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Domain\/App\/AppSettings.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Domain\/App\/AppSettings.swift",
       "kind": "StringLiteral",
       "offset": 158,
       "length": 16,
       "value": "\"virtuozNameKey\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Foundation\/Components\/Logger\/Logger.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Foundation\/Components\/Logger\/Logger.swift",
       "kind": "BooleanLiteral",
       "offset": 634,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Ressources\/Assets.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Ressources\/Assets.swift",
       "kind": "StringLiteral",
       "offset": 847,
       "length": 14,
       "value": "\"icnOverlayed\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Ressources\/Assets.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Ressources\/Assets.swift",
       "kind": "StringLiteral",
       "offset": 914,
       "length": 11,
       "value": "\"icnRDigit\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Ressources\/Assets.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Ressources\/Assets.swift",
       "kind": "StringLiteral",
       "offset": 978,
       "length": 11,
       "value": "\"icnRLight\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Ressources\/Assets.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Ressources\/Assets.swift",
       "kind": "StringLiteral",
       "offset": 1042,
       "length": 11,
       "value": "\"icnRTouch\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Ressources\/Assets.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Ressources\/Assets.swift",
       "kind": "StringLiteral",
       "offset": 1108,
       "length": 13,
       "value": "\"icnTranspoz\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Ressources\/Assets.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Ressources\/Assets.swift",
       "kind": "StringLiteral",
       "offset": 1175,
       "length": 12,
       "value": "\"icnVirtuoz\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Ressources\/Assets.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Ressources\/Assets.swift",
       "kind": "StringLiteral",
       "offset": 1713,
       "length": 43,
       "value": "\"Unable to load color asset named \""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/Ressources\/Assets.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/Ressources\/Assets.swift",
       "kind": "StringLiteral",
       "offset": 1754,
       "length": 1,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/VirtuozManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/VirtuozManager.swift",
       "kind": "BooleanLiteral",
       "offset": 320,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/VirtuozManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/VirtuozManager.swift",
       "kind": "BooleanLiteral",
       "offset": 347,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/VirtuozManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/VirtuozManager.swift",
       "kind": "BooleanLiteral",
       "offset": 420,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/VirtuozManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/VirtuozManager.swift",
       "kind": "BooleanLiteral",
       "offset": 454,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/VirtuozManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/VirtuozManager.swift",
       "kind": "StringLiteral",
       "offset": 1719,
       "length": 22,
       "value": "\"remoteControlNameKey\""
     },
     {
-      "filePath": "\/Users\/fabien\/Development\/Perso\/Libraries\/Virtuoz\/VirtuozSDK\/VirtuozManager.swift",
+      "filePath": "\/Users\/bassem\/Development\/magie-factory\/VirtuozCore\/VirtuozSDK\/VirtuozManager.swift",
       "kind": "StringLiteral",
       "offset": 1774,
       "length": 14,
       "value": "\"c3VzcGVuZA==\""
     },
     {
-      "filePath": "\/Users\/fabien\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-arkclfekkninsqeprmllwxgfwkid\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/bassem\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-gjfgljubkezoybbgiemhkzmjwboy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 737,
       "length": 14,
       "value": "\"icnOverlayed\""
     },
     {
-      "filePath": "\/Users\/fabien\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-arkclfekkninsqeprmllwxgfwkid\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/bassem\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-gjfgljubkezoybbgiemhkzmjwboy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 879,
       "length": 11,
       "value": "\"icnRDigit\""
     },
     {
-      "filePath": "\/Users\/fabien\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-arkclfekkninsqeprmllwxgfwkid\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/bassem\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-gjfgljubkezoybbgiemhkzmjwboy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1018,
       "length": 11,
       "value": "\"icnRLight\""
     },
     {
-      "filePath": "\/Users\/fabien\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-arkclfekkninsqeprmllwxgfwkid\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/bassem\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-gjfgljubkezoybbgiemhkzmjwboy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1157,
       "length": 11,
       "value": "\"icnRTouch\""
     },
     {
-      "filePath": "\/Users\/fabien\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-arkclfekkninsqeprmllwxgfwkid\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/bassem\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-gjfgljubkezoybbgiemhkzmjwboy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1300,
       "length": 13,
       "value": "\"icnTranspoz\""
     },
     {
-      "filePath": "\/Users\/fabien\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-arkclfekkninsqeprmllwxgfwkid\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/bassem\/Library\/Developer\/Xcode\/DerivedData\/VirtuozSDK-gjfgljubkezoybbgiemhkzmjwboy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VirtuozSDK\/IntermediateBuildFilesPath\/VirtuozSDK.build\/Release-iphonesimulator\/VirtuozSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1443,
       "length": 12,

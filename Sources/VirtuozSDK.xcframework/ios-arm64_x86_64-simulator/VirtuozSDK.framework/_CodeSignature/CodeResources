@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		4G3wS2mFr9+zq8f4UGdCmBb9Ngw=
+		cTj+04T0bfeo/ZS0+8rw+AaRuzE=
 		</data>
 		<key>Headers/VirtuozSDK.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kHNdKUSv3BSqtnF8DoejC/0tK9w=
+		hz79m8+FsbSBDJMjXo9VG4xNJNI=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/z2NTYlE7aJgTQCw5pwQUWn/hIQ=
+		eaCnotsIifUO3bv45lzTAhfGf/c=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		kfv7OYhzXjNaPZ5cArIvwdNo444=
+		u3RGdf/hV0jzocG9VEmsCmFtidk=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HSGQ7YdSxOa39/r+8yFOiH/QNKk=
+		gtU5hwo8/6SbgRwuXU5FmyRc/m8=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kfv7OYhzXjNaPZ5cArIvwdNo444=
+		u3RGdf/hV0jzocG9VEmsCmFtidk=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		p0ooaMtbzRMJoDNDZ5UpQLonSrc=
+		0+QH2Xpwul8se6bhxhoEmyB3kYo=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/z2NTYlE7aJgTQCw5pwQUWn/hIQ=
+		eaCnotsIifUO3bv45lzTAhfGf/c=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		mXcTUckTI0/5J1hxVTZaGUE4Kas=
+		m6l7rKDZEzgin7PFAbsUvATlRoI=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		n1kZ13gsSK0ABR8QLpaEJ4Xbzd8=
+		KDhM0kfkgfJxpqdFms2UCLXm3yM=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mXcTUckTI0/5J1hxVTZaGUE4Kas=
+		m6l7rKDZEzgin7PFAbsUvATlRoI=
 		</data>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		39x+P4WAVA9YQ4pmOLG6+fhWazk=
+		Js9t5R5QMcnURs0DuF20VYQGgD4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7I3h3aRm4ewcwZFJ3mV1/+z0o/WVk9q/II3ri9uRsv4=
+			CzAfWgGGdlXLijE5zY48FWC2dZGMJYXmFS5A53cYhG0=
 			</data>
 		</dict>
 		<key>Headers/VirtuozSDK.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xBAyhz4x5UMnnzPexNH3WIsOTdq6Nbvm9sURbjjv0m4=
+			oCvyOmgI7UxP+UZDiq/fN+uyXo3Q1pXBwId8Z0f81AM=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q5Ll/h7n3nBDk/a5hImWQyWtOsIbQec+ChlCbQPsfAk=
+			hPCle+v4oIsv9KHYPRBKGpVqBEJQ5ISojHDNinTQv3Y=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v4EYYyfV+BaszdV9IZbznajTSX/8kyYmcUYJpw9jseo=
+			Upgcb2zPolE2GHs5g2kPtbZ8MSKQh/og08ZxYovdjIM=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q5Ll/h7n3nBDk/a5hImWQyWtOsIbQec+ChlCbQPsfAk=
+			hPCle+v4oIsv9KHYPRBKGpVqBEJQ5ISojHDNinTQv3Y=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VJNWzZEqTjUTdxK8Rp1SLMS6Oy5AGmHUaEDHSBEWZNM=
+			n5xj11WpVBHK1hCKQgA58+/tkMf6IHMnCieAKWGtUbI=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xBAyhz4x5UMnnzPexNH3WIsOTdq6Nbvm9sURbjjv0m4=
+			oCvyOmgI7UxP+UZDiq/fN+uyXo3Q1pXBwId8Z0f81AM=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qxbD+rUcoHa+xC0T9FFuhuk7rQrKNzhl5y3WcuhYBtE=
+			4DhRwibFwPHQuAHgj0rKsISQL1Yzg+IElqi2tCL11fQ=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sKiFSV5f849XZOBY4ZnzVng6DbX92XS0icMXPQ23/ao=
+			5sb0gQsD+iuo2AFmHyTpzBWIFFg0PUcDJ6ie9XWraeU=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qxbD+rUcoHa+xC0T9FFuhuk7rQrKNzhl5y3WcuhYBtE=
+			4DhRwibFwPHQuAHgj0rKsISQL1Yzg+IElqi2tCL11fQ=
 			</data>
 		</dict>
 		<key>Modules/VirtuozSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gJ8Ih+exp3XpadivwX0ogjbOUBj1MHM9C9TQPde5hfQ=
+			f1Pf2k5usAS8dVX56dbZRqe8RHuL0wkeqe1SKD0PdtQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
